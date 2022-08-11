@@ -9,7 +9,7 @@ import static team.unnamed.bukkit.ServerVersion.VERSION_STRING;
 public class BoardHandlerFactory {
 
     private static final Constructor<?> BOARD_HANDLER_CONSTRUCTOR;
-    private static final String CLASS_NAME_FORMAT = "team.unnamed.scoreboard.platform.v%s.BoardHandler_v%s";
+    private static final String CLASS_NAME_FORMAT = "team.unnamed.scoreboard.platform.%s.BoardHandler_%s";
 
     static {
         try {
