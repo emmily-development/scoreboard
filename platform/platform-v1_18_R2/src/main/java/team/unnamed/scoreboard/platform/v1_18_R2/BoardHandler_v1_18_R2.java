@@ -1,4 +1,4 @@
-package team.unnamed.scoreabord.platform.v1_17_R1;
+package team.unnamed.scoreboard.platform.v1_18_R2;
 
 import net.minecraft.EnumChatFormat;
 import net.minecraft.network.PacketDataSerializer;
@@ -13,14 +13,11 @@ import net.minecraft.server.ScoreboardServer;
 import net.minecraft.server.network.PlayerConnection;
 import net.minecraft.world.scores.ScoreboardTeamBase;
 import net.minecraft.world.scores.criteria.IScoreboardCriteria;
-
-import org.bukkit.craftbukkit.v1_17_R1.entity.CraftPlayer;
+import org.bukkit.craftbukkit.v1_18_R2.entity.CraftPlayer;
 import org.bukkit.entity.Player;
-
 import team.unnamed.scoreboard.BoardHandler;
 
 import javax.annotation.Nullable;
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -29,9 +26,9 @@ import java.util.function.Function;
 
 /**
  * Version-specific implementation of {@link BoardHandler}
- * for 1.17 minecraft servers
+ * for 1.18 minecraft servers
  */
-public class BoardHandler_v1_17_R1
+public class BoardHandler_v1_18_R2
     implements BoardHandler {
 
     //#region Objective handling
@@ -388,7 +385,7 @@ public class BoardHandler_v1_17_R1
             .getHandle()
             .b;
         for (Packet<?> packet : packets) {
-            connection.sendPacket(packet);
+            connection.a(packet);
         }
     }
 }

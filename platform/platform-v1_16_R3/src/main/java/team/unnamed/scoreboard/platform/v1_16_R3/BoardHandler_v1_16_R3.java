@@ -434,7 +434,7 @@ public class BoardHandler_v1_16_R3
      * specified {@code receiver} player
      *
      * @param receiver The packet receiver
-     * @param packets  The sent packets
+     * @param packets  The packets to be sent
      */
     private static void sendPackets(
         Player receiver,
