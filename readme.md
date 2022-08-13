@@ -46,13 +46,13 @@ repositories {
 build.gradle (Groovy DSL)
 ```groovy
 dependencies {
-    implementation 'team.unnamed.scoreboard:scoreboard-api:VERSION'
+    implementation 'team.unnamed.scoreboard:api:VERSION'
 }
 ```
 
 build.gradle.kts (Kotlin DSL)
 ```kotlin
 dependencies {
-    implementation("team.unnamed.scoreboard:scoreboard-api:VERSION")
+    implementation("team.unnamed.scoreboard:api:VERSION")
 }
 ```
